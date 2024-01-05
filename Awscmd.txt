@@ -61,7 +61,7 @@ const express=require("express");
 const path=require("path")
 const app=express()
 
-const staticfolder=express.static(path.join(__dirname,"Public"));
+const staticfolder=express.static(path.join(__dirname,"Public"));   ======>here note plz keep folder name (Public) same becuse it case sensitive
 app.use(staticfolder);
 
 app.get("/",(req,res)=>{
